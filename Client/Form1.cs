@@ -9,8 +9,25 @@ namespace Client
 
         private void button1_Click(object sender, EventArgs e)
         {
-            KhachHang khachHang = new KhachHang();
-            khachHang.Show();
+            button1.BackColor = Color.Green;
+
+
+            KhachHang f2 = new KhachHang();
+
+
+            f2.Show();
+        }
+
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            button2.BackColor = Color.Green;
+
+
+            ThuNgan f3 = new ThuNgan();
+
+
+            f3.Show();
         }
     }
 }

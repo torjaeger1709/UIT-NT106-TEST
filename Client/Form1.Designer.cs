@@ -34,9 +34,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(120, 100);
+            button1.Location = new Point(105, 75);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(229, 133);
+            button1.Size = new Size(200, 100);
             button1.TabIndex = 0;
             button1.Text = "Khách Hàng";
             button1.UseVisualStyleBackColor = true;
@@ -44,20 +45,23 @@
             // 
             // button2
             // 
-            button2.Location = new Point(422, 100);
+            button2.Location = new Point(369, 75);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(223, 133);
+            button2.Size = new Size(195, 100);
             button2.TabIndex = 1;
             button2.Text = "Thu Ngân";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(button2);
             Controls.Add(button1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
