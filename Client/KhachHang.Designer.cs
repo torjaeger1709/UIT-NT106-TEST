@@ -28,41 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            dataGridView1 = new DataGridView();
+            btnConnect = new Button();
+            btnOrder = new Button();
+            dgvMenu = new DataGridView();
             label1 = new Label();
-            numericUpDown1 = new NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            nudTable = new NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)dgvMenu).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudTable).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // btnConnect
             // 
-            button1.Location = new Point(12, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "Connect";
-            button1.UseVisualStyleBackColor = true;
+            btnConnect.Location = new Point(12, 12);
+            btnConnect.Name = "btnConnect";
+            btnConnect.Size = new Size(94, 29);
+            btnConnect.TabIndex = 0;
+            btnConnect.Text = "Connect";
+            btnConnect.UseVisualStyleBackColor = true;
+            btnConnect.Click += btnConnect_Click;
             // 
-            // button2
+            // btnOrder
             // 
-            button2.Location = new Point(522, 353);
-            button2.Name = "button2";
-            button2.Size = new Size(170, 62);
-            button2.TabIndex = 1;
-            button2.Text = "Place Order";
-            button2.UseVisualStyleBackColor = true;
+            btnOrder.Location = new Point(522, 353);
+            btnOrder.Name = "btnOrder";
+            btnOrder.Size = new Size(170, 62);
+            btnOrder.TabIndex = 1;
+            btnOrder.Text = "Place Order";
+            btnOrder.UseVisualStyleBackColor = true;
+            btnOrder.Click += btnOrder_Click;
             // 
-            // dataGridView1
+            // dgvMenu
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 72);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(762, 275);
-            dataGridView1.TabIndex = 2;
+            dgvMenu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvMenu.Location = new Point(12, 72);
+            dgvMenu.Name = "dgvMenu";
+            dgvMenu.RowHeadersWidth = 51;
+            dgvMenu.Size = new Size(762, 275);
+            dgvMenu.TabIndex = 2;
             // 
             // label1
             // 
@@ -73,37 +75,38 @@
             label1.TabIndex = 3;
             label1.Text = "Số bàn";
             // 
-            // numericUpDown1
+            // nudTable
             // 
-            numericUpDown1.Location = new Point(117, 370);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(150, 27);
-            numericUpDown1.TabIndex = 4;
+            nudTable.Location = new Point(117, 370);
+            nudTable.Name = "nudTable";
+            nudTable.Size = new Size(150, 27);
+            nudTable.TabIndex = 4;
             // 
             // KhachHang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(numericUpDown1);
+            Controls.Add(nudTable);
             Controls.Add(label1);
-            Controls.Add(dataGridView1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(dgvMenu);
+            Controls.Add(btnOrder);
+            Controls.Add(btnConnect);
             Name = "KhachHang";
             Text = "KhachHang";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            Load += KhachHang_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvMenu).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudTable).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private DataGridView dataGridView1;
+        private Button btnConnect;
+        private Button btnOrder;
+        private DataGridView dgvMenu;
         private Label label1;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown nudTable;
     }
 }
